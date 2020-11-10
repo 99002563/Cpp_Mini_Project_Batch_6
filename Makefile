@@ -1,14 +1,14 @@
 PROJECT_NAME=PATIENTMGMT
-CC=  g++ -Wall -g
+CC=  g++ 
 SRC= src/*.cpp
 TESTSRC= test/*.cpp
 INC= -Iinc
 
 src_build:${SRC} ${INC}
-	${CC} ${SRC} ${INC} -o ${PROJECT_NAME}.out 
+	${CC} -Wall -g ${SRC} ${INC} -o ${PROJECT_NAME}.out 
 
 test_build:${TESTSRC} ${INC}
-	${CC} ${TESTSRC} ${INC} -o ${PROJECT_NAME}_test.out 
+	${CC} -Wall -g ${TESTSRC} ${INC} -o ${PROJECT_NAME}_test.out 
 
 clean:
 	rm -f *.o *.out
