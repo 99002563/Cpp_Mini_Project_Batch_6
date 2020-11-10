@@ -13,7 +13,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make source
-      run: make src_build
-    - name: make test
-      run: make test_build
+    - name: make PatientMGMT
+      run: make 
