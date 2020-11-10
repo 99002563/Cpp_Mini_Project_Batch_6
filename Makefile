@@ -1,7 +1,7 @@
 PROJECT_NAME=PATIENTMGMT
 CC=  g++ -Wall -g
-SRC= src/*.c
-TESTSRC= test/*.c
+SRC= src/*.cpp
+TESTSRC= test/*.cpp
 INC= -Iinc
 
 src_build:${SRC} ${INC}
