@@ -5,10 +5,10 @@ TESTSRC= test/*.cpp
 INC= -Iinc
 
 src_build:${SRC} ${INC}
-		${CC} ${SRC} -o ${INC} ${PROJECT_NAME}.out 
+	${CC} ${INC} ${SRC} -o ${PROJECT_NAME}.out 
 
 test_build:${TESTSRC} ${INC}
-		${CC} ${TESTSRC} -o ${INC} ${PROJECT_NAME}_test.out 
+	${CC} ${INC} ${TESTSRC} -o ${PROJECT_NAME}_test.out 
 
 clean:
-		rm -f *.o *.out
+	rm -f *.o *.out
